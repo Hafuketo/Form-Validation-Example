@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form</title>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="src/fvtest.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header"><h2>Account Creator</h2></div>
+      <form class="form" id="form" method="GET">
+        <div class="form-control">
+          <label for="">Username</label>
+          <input type="text" placeholder="e.g. Macgyver" id="username" />
+          <i class="fa fa-check-circle"></i>
+          <i class="fa fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+
+        <div class="form-control">
+          <label for="">Email</label>
+          <input type="email" placeholder="your@email.com" id="email" />
+          <i class="fa fa-check-circle"></i>
+          <i class="fa fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+
+        <div id="email-id" class="form-control hidden-class">
+          <label for="">Confirm email</label>
+          <input
+            type="email"
+            placeholder="your@email.com"
+            id="email2"
+            autocomplete="off"
+          />
+          <i class="fa fa-check-circle"></i>
+          <i class="fa fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+
+        <div class="form-control">
+          <label for="">Password</label>
+          <input
+            type="password"
+            placeholder="Choose a password"
+            id="password"
+          />
+          <i class="fa fa-check-circle"></i>
+          <i class="fa fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+
+        <button>Submit</button>
+      </form>
+    </div>
+
+    <script src="src/fvtest.js"></script>
+  </body>
+</html>
